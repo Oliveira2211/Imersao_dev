@@ -23,8 +23,7 @@ function jogar() {
 
         index_viloes = Math.floor(Math.random() * viloes_possiveis.length)
         viloes[i] = viloes_possiveis[index_viloes]
-        viloes_possiveis.splice(index_viloes, 1)
-        // Primeiro valor é a partir de onde ele vai começar e o segundo quantos valores serão excluidos
+        viloes_possiveis.splice(index_viloes, 1) // O primeiro argumento é o index do array e o segundo argumento quantos valores serão excluidos.
 
         forca_herois[i] = Math.floor(Math.random() * 10) + 1
         forca_viloes[i] = Math.floor(Math.random() * 10) + 1
